@@ -1,0 +1,225 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use App\Models\Category;
+use App\Models\Item;
+
+class ItemSeeder extends Seeder
+{
+    public function run(): void
+    {
+        $ayam = Category::where('name', 'Ayam')->first();
+        $seafood = Category::where('name', 'Seafood')->first();
+        $sapi = Category::where('name', 'Sapi')->first();
+        $sayuran = Category::where('name', 'Sayuran')->first();
+        $siapSaji = Category::where('name', 'Siap Saji')->first();
+        $sosis = Category::where('name', 'Sosis')->first();
+        $kentang = Category::where('name', 'Kentang')->first();
+
+        Item::truncate();
+
+        $items = [
+            [
+                'category_id' => $ayam->id,
+                'name' => 'Ayam Nugget Premium',
+                'stock' => 50,
+                'unit' => 'pack',
+                'buy_price' => 32000,
+                'sell_price' => 45000,
+                'min_stock' => 10,
+                'weight' => '500g',
+                'storage_location' => 'Freezer A-1',
+                'description' => 'Nugget ayam pilihan dengan bumbu rempah spesial.',
+                'image_path' => 'items/nugget.png',
+            ],
+            [
+                'category_id' => $ayam->id,
+                'name' => 'Chicken Wings Spicy',
+                'stock' => 25,
+                'unit' => 'pack',
+                'buy_price' => 40000,
+                'sell_price' => 55000,
+                'min_stock' => 5,
+                'weight' => '1kg',
+                'storage_location' => 'Freezer A-2',
+                'description' => 'Sayap ayam berbumbu pedas gurih siap goreng.',
+                'image_path' => 'items/wings.png',
+            ],
+            [
+                'category_id' => $sapi->id,
+                'name' => 'Daging Sapi Slice Wagyu',
+                'stock' => 15,
+                'unit' => 'pack',
+                'buy_price' => 85000,
+                'sell_price' => 110000,
+                'min_stock' => 5,
+                'weight' => '500g',
+                'storage_location' => 'Freezer B-1',
+                'description' => 'Irisan daging sapi tipis kualitas wagyu untuk shabu-shabu.',
+                'image_path' => 'items/wagyu.png',
+            ],
+            [
+                'category_id' => $sapi->id,
+                'name' => 'Bakso Sapi Urat Jumbo',
+                'stock' => 40,
+                'unit' => 'pack',
+                'buy_price' => 28000,
+                'sell_price' => 38000,
+                'min_stock' => 10,
+                'weight' => '500g',
+                'storage_location' => 'Freezer B-2',
+                'description' => 'Bakso sapi asli dengan tekstur urat yang kenyal.',
+                'image_path' => 'items/bakso.png',
+            ],
+            [
+                'category_id' => $seafood->id,
+                'name' => 'Ikan Dori Fillet Putih',
+                'stock' => 30,
+                'unit' => 'kg',
+                'buy_price' => 38000,
+                'sell_price' => 52000,
+                'min_stock' => 10,
+                'weight' => '1kg',
+                'storage_location' => 'Freezer C-1',
+                'description' => 'Fillet ikan dori bersih tanpa tulang.',
+                'image_path' => 'items/dori.png',
+            ],
+            [
+                'category_id' => $seafood->id,
+                'name' => 'Udang Vaname Frozen',
+                'stock' => 20,
+                'unit' => 'box',
+                'buy_price' => 55000,
+                'sell_price' => 75000,
+                'min_stock' => 5,
+                'weight' => '500g',
+                'storage_location' => 'Freezer C-2',
+                'description' => 'Udang segar kupas sisakan ekor (PTO).',
+                'image_path' => 'items/udang.png',
+            ],
+            [
+                'category_id' => $sosis->id,
+                'name' => 'Sosis Bratwurst Jumbo',
+                'stock' => 60,
+                'unit' => 'pack',
+                'buy_price' => 45000,
+                'sell_price' => 62000,
+                'min_stock' => 15,
+                'weight' => '500g',
+                'storage_location' => 'Freezer D-1',
+                'description' => 'Sosis sapi ala Jerman dengan ukuran jumbo.',
+                'image_path' => 'items/sosis_jumbo.png',
+            ],
+            [
+                'category_id' => $sosis->id,
+                'name' => 'Cocktail Sausage Chicken',
+                'stock' => 45,
+                'unit' => 'pack',
+                'buy_price' => 25000,
+                'sell_price' => 35000,
+                'min_stock' => 10,
+                'weight' => '250g',
+                'storage_location' => 'Freezer D-2',
+                'description' => 'Sosis ayam ukuran kecil untuk campuran masakan.',
+                'image_path' => 'items/sosis_kecil.png',
+            ],
+            [
+                'category_id' => $kentang->id,
+                'name' => 'French Fries Shoestring',
+                'stock' => 100,
+                'unit' => 'kg',
+                'buy_price' => 22000,
+                'sell_price' => 32000,
+                'min_stock' => 20,
+                'weight' => '2.5kg',
+                'storage_location' => 'Freezer E-1',
+                'description' => 'Kentang goreng iris tipis renyah.',
+                'image_path' => 'items/kentang.png',
+            ],
+            [
+                'category_id' => $kentang->id,
+                'name' => 'Potato Wedges Seasoned',
+                'stock' => 35,
+                'unit' => 'pack',
+                'buy_price' => 30000,
+                'sell_price' => 42000,
+                'min_stock' => 10,
+                'weight' => '1kg',
+                'storage_location' => 'Freezer E-2',
+                'description' => 'Potongan kentang besar dengan kulit dan bumbu rempah.',
+                'image_path' => 'items/wedges.png',
+            ],
+            [
+                'category_id' => $siapSaji->id,
+                'name' => 'Kebab Daging Sapi Frozen',
+                'stock' => 50,
+                'unit' => 'box',
+                'buy_price' => 35000,
+                'sell_price' => 48000,
+                'min_stock' => 10,
+                'weight' => '5 pcs/box',
+                'storage_location' => 'Freezer F-1',
+                'description' => 'Mini kebab dengan isian daging sapi dan saus.',
+                'image_path' => 'items/kebab.png',
+            ],
+            [
+                'category_id' => $siapSaji->id,
+                'name' => 'Dimsum Ayam Mix',
+                'stock' => 40,
+                'unit' => 'box',
+                'buy_price' => 42000,
+                'sell_price' => 60000,
+                'min_stock' => 10,
+                'weight' => '20 pcs/box',
+                'storage_location' => 'Freezer F-2',
+                'description' => 'Aneka topping dimsum ayam lezat.',
+                'image_path' => 'items/dimsum.png',
+            ],
+            [
+                'category_id' => $sayuran->id,
+                'name' => 'Mixed Vegetables 3 Way',
+                'stock' => 70,
+                'unit' => 'pack',
+                'buy_price' => 15000,
+                'sell_price' => 25000,
+                'min_stock' => 20,
+                'weight' => '500g',
+                'storage_location' => 'Freezer G-1',
+                'description' => 'Campuran jagung, wortel, dan buncis.',
+                'image_path' => 'items/sayuran.png',
+            ],
+            [
+                'category_id' => $sayuran->id,
+                'name' => 'Edamame Green Beans',
+                'stock' => 12,
+                'unit' => 'pack',
+                'buy_price' => 18000,
+                'sell_price' => 28000,
+                'min_stock' => 10,
+                'weight' => '500g',
+                'storage_location' => 'Freezer G-2',
+                'description' => 'Kacang kedelai Jepang yang sehat.',
+                'image_path' => 'items/edamame.png',
+            ],
+            [
+                'category_id' => $siapSaji->id,
+                'name' => 'Pizza Mini Frozen',
+                'stock' => 0,
+                'unit' => 'box',
+                'buy_price' => 28000,
+                'sell_price' => 40000,
+                'min_stock' => 10,
+                'weight' => '4 pcs/box',
+                'storage_location' => 'Freezer F-3',
+                'description' => 'Pizza mini topping sosis dan keju.',
+                'image_path' => 'items/pizza.png',
+            ],
+        ];
+
+        foreach ($items as $item) {
+            Item::create($item);
+        }
+    }
+}
