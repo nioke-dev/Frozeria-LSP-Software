@@ -29,6 +29,7 @@ class ItemController extends Controller
     {
         $request->validate([
             'category_id' => 'required|exists:categories,id',
+            'item_code' => 'required|string|unique:items,item_code|max:50',
             'name' => 'required|string|max:255',
             'stock' => 'required|integer|min:0',
             'unit' => 'required|string|max:50',
@@ -73,6 +74,7 @@ class ItemController extends Controller
     {
         $request->validate([
             'category_id' => 'required|exists:categories,id',
+            'item_code' => 'required|string|max:50|unique:items,item_code,' . $item->id,
             'name' => 'required|string|max:255',
             'stock' => 'required|integer|min:0',
             'unit' => 'required|string|max:50',

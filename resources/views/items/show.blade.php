@@ -39,7 +39,7 @@
             </div>
             <div class="space-y-6 pt-4">
                 <div class="space-y-2">
-                    <p class="text-[10px] font-black text-orange-500 uppercase tracking-[0.3em] ml-1">Nama Produk</p>
+                    <span class="text-[10px] font-black text-blue-500 uppercase tracking-[0.3em] ml-1">{{ $item->item_code }}</span>
                     <h2 class="text-4xl font-black text-gray-900 tracking-tight leading-tight">{{ $item->name }}</h2>
                 </div>
                 <div class="inline-flex items-center gap-2 px-6 py-2 bg-gray-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest">

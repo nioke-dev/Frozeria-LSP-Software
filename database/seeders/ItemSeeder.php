@@ -23,6 +23,7 @@ class ItemSeeder extends Seeder
         $items = [
             [
                 'category_id' => $ayam->id,
+                'item_code' => 'FRZ-AYM-001',
                 'name' => 'Ayam Nugget Premium',
                 'stock' => 50,
                 'unit' => 'pack',
@@ -36,6 +37,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'category_id' => $ayam->id,
+                'item_code' => 'FRZ-AYM-002',
                 'name' => 'Chicken Wings Spicy',
                 'stock' => 25,
                 'unit' => 'pack',
@@ -49,6 +51,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'category_id' => $sapi->id,
+                'item_code' => 'FRZ-SAP-001',
                 'name' => 'Daging Sapi Slice Wagyu',
                 'stock' => 15,
                 'unit' => 'pack',
@@ -62,6 +65,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'category_id' => $sapi->id,
+                'item_code' => 'FRZ-SAP-002',
                 'name' => 'Bakso Sapi Urat Jumbo',
                 'stock' => 40,
                 'unit' => 'pack',
@@ -75,6 +79,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'category_id' => $seafood->id,
+                'item_code' => 'FRZ-SFD-001',
                 'name' => 'Ikan Dori Fillet Putih',
                 'stock' => 30,
                 'unit' => 'kg',
@@ -88,6 +93,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'category_id' => $seafood->id,
+                'item_code' => 'FRZ-SFD-002',
                 'name' => 'Udang Vaname Frozen',
                 'stock' => 20,
                 'unit' => 'box',
@@ -101,6 +107,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'category_id' => $sosis->id,
+                'item_code' => 'FRZ-SOS-001',
                 'name' => 'Sosis Bratwurst Jumbo',
                 'stock' => 60,
                 'unit' => 'pack',
@@ -114,6 +121,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'category_id' => $sosis->id,
+                'item_code' => 'FRZ-SOS-002',
                 'name' => 'Cocktail Sausage Chicken',
                 'stock' => 45,
                 'unit' => 'pack',
@@ -127,6 +135,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'category_id' => $kentang->id,
+                'item_code' => 'FRZ-KTG-001',
                 'name' => 'French Fries Shoestring',
                 'stock' => 100,
                 'unit' => 'kg',
@@ -140,6 +149,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'category_id' => $kentang->id,
+                'item_code' => 'FRZ-KTG-002',
                 'name' => 'Potato Wedges Seasoned',
                 'stock' => 35,
                 'unit' => 'pack',
@@ -153,6 +163,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'category_id' => $siapSaji->id,
+                'item_code' => 'FRZ-SPJ-001',
                 'name' => 'Kebab Daging Sapi Frozen',
                 'stock' => 50,
                 'unit' => 'box',
@@ -166,6 +177,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'category_id' => $siapSaji->id,
+                'item_code' => 'FRZ-SPJ-002',
                 'name' => 'Dimsum Ayam Mix',
                 'stock' => 40,
                 'unit' => 'box',
@@ -179,6 +191,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'category_id' => $sayuran->id,
+                'item_code' => 'FRZ-SYR-001',
                 'name' => 'Mixed Vegetables 3 Way',
                 'stock' => 70,
                 'unit' => 'pack',
@@ -192,6 +205,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'category_id' => $sayuran->id,
+                'item_code' => 'FRZ-SYR-002',
                 'name' => 'Edamame Green Beans',
                 'stock' => 12,
                 'unit' => 'pack',
@@ -205,6 +219,7 @@ class ItemSeeder extends Seeder
             ],
             [
                 'category_id' => $siapSaji->id,
+                'item_code' => 'FRZ-SPJ-003',
                 'name' => 'Pizza Mini Frozen',
                 'stock' => 0,
                 'unit' => 'box',

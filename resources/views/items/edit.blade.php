@@ -136,10 +136,17 @@
 
                 <!-- Section: Form Fields -->
                 <div class="space-y-6">
-                    <div class="space-y-2">
-                        <label class="block text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1">Nama Barang *</label>
-                        <input type="text" name="name" value="{{ old('name', $item->name) }}" required
-                            class="w-full px-5 py-3 bg-gray-50/50 border-2 border-gray-50 rounded-xl focus:bg-white focus:border-blue-500 outline-none transition-all text-gray-900 font-bold text-sm">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="space-y-2">
+                            <label class="block text-[10px] font-black text-blue-500 uppercase tracking-widest ml-1">Kode Barang *</label>
+                            <input type="text" name="item_code" value="{{ old('item_code', $item->item_code) }}" required
+                                class="w-full px-5 py-3 bg-blue-50/20 border-2 border-blue-50 rounded-xl focus:bg-white focus:border-blue-500 outline-none transition-all text-gray-900 font-bold text-sm uppercase">
+                        </div>
+                        <div class="md:col-span-2 space-y-2">
+                            <label class="block text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1">Nama Barang *</label>
+                            <input type="text" name="name" value="{{ old('name', $item->name) }}" required
+                                class="w-full px-5 py-3 bg-gray-50/50 border-2 border-gray-50 rounded-xl focus:bg-white focus:border-blue-500 outline-none transition-all text-gray-900 font-bold text-sm">
+                        </div>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">

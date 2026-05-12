@@ -166,11 +166,12 @@
         <div class="overflow-x-auto">
             <table class="w-full">
                 <thead class="bg-gray-50/50 text-[10px] font-black text-gray-400 uppercase tracking-widest">
-                    <tr><th class="px-8 py-5">Nama Barang</th><th class="px-8 py-5 text-center">Kategori</th><th class="px-8 py-5 text-center">Stok</th><th class="px-8 py-5">Harga</th><th class="px-8 py-5 text-center">Opsi</th></tr>
+                    <tr><th class="px-8 py-5 text-left">Kode</th><th class="px-8 py-5 text-left">Nama Barang</th><th class="px-8 py-5 text-center">Kategori</th><th class="px-8 py-5 text-center">Stok</th><th class="px-8 py-5">Harga</th><th class="px-8 py-5 text-center">Opsi</th></tr>
                 </thead>
                 <tbody id="items-table-body" class="divide-y divide-gray-50">
                     @forelse($items as $item)
                     <tr class="hover:bg-gray-50/30 transition-colors">
+                        <td class="px-8 py-6 text-blue-600 font-black text-xs tracking-widest uppercase">{{ $item->item_code }}</td>
                         <td class="px-8 py-6 font-black text-gray-900 text-sm tracking-tight">{{ $item->name }}</td>
                         <td class="px-8 py-6 text-center"><span class="px-3 py-1 bg-gray-100 text-gray-500 rounded-lg text-[9px] font-black uppercase tracking-widest">{{ $item->category->name }}</span></td>
                         <td class="px-6 py-6 whitespace-nowrap text-center">
@@ -204,7 +205,7 @@
                         </div></td>
                     </tr>
                     @empty
-                    <tr><td colspan="5" class="px-8 py-20 text-center text-gray-400 font-bold italic">Barang tidak ditemukan...</td></tr>
+                    <tr><td colspan="6" class="px-8 py-20 text-center text-gray-400 font-bold italic">Barang tidak ditemukan...</td></tr>
                     @endforelse
                 </tbody>
             </table>
