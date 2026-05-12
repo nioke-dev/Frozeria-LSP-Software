@@ -98,36 +98,37 @@
 
     <!-- SPECIAL SECTION: KODE BARANG SKU -->
     <div class="mb-24">
-        <div class="bg-blue-600 rounded-[50px] p-10 md:p-16 text-white relative overflow-hidden shadow-2xl shadow-blue-200">
-            <div class="absolute -top-20 -right-20 w-80 h-80 bg-blue-500 rounded-full opacity-30"></div>
-            <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-white opacity-10 rounded-full"></div>
+        <div class="bg-gradient-to-br from-blue-600 to-blue-700 rounded-[50px] p-10 md:p-16 text-white relative overflow-hidden shadow-2xl shadow-blue-200">
+            <!-- Refined Decorative Elements -->
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-white opacity-[0.05] rounded-full"></div>
+            <div class="absolute top-1/2 -left-20 w-40 h-40 bg-blue-400 opacity-20 rounded-full blur-3xl"></div>
             
             <div class="relative z-10">
-                <div class="flex flex-col md:flex-row items-start md:items-center gap-6 mb-10">
-                    <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center text-3xl">🔖</div>
+                <div class="flex flex-col md:flex-row items-start md:items-center gap-6 mb-12">
+                    <div class="w-16 h-16 bg-white/20 backdrop-blur-xl rounded-2xl flex items-center justify-center text-3xl shadow-inner">🔖</div>
                     <div>
                         <h3 class="text-2xl font-black uppercase tracking-tight leading-none">Sistem Kode Barang (SKU)</h3>
-                        <p class="text-blue-100 text-xs font-bold mt-2 italic tracking-wide">Unique Product Identification & Anti-Duplicate System</p>
+                        <p class="text-blue-100 text-[10px] font-black mt-2 italic tracking-[0.2em] uppercase opacity-80">Unique Product Identification & Anti-Duplicate System</p>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <div class="space-y-6">
-                        <div class="bg-white/10 p-6 rounded-3xl backdrop-blur-sm border border-white/10">
-                            <h6 class="text-xs font-black uppercase tracking-widest mb-3 flex items-center gap-2">
-                                <span class="w-2 h-2 bg-white rounded-full animate-ping"></span>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="group">
+                        <div class="bg-white/10 p-8 rounded-[32px] backdrop-blur-md border border-white/10 hover:bg-white/15 transition-all duration-300 h-full">
+                            <h6 class="text-[10px] font-black uppercase tracking-[0.2em] mb-4 flex items-center gap-3">
+                                <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
                                 Kenapa Wajib Ada?
                             </h6>
-                            <p class="text-[11px] leading-relaxed text-blue-50 font-bold italic">Kode Barang (SKU) digunakan untuk membedakan produk yang identik namun memiliki <span class="underline">Merk berbeda</span> atau <span class="underline">Kemasan berbeda</span>. Hal ini menjamin akurasi stok 100% pada gudang Frozeria.</p>
+                            <p class="text-xs leading-relaxed text-blue-50 font-bold italic opacity-90">Kode Barang (SKU) digunakan untuk membedakan produk yang identik namun memiliki <span class="text-white underline decoration-blue-400 underline-offset-4">Merk berbeda</span> atau <span class="text-white underline decoration-blue-400 underline-offset-4">Kemasan berbeda</span>. Hal ini menjamin akurasi stok 100% pada gudang Frozeria.</p>
                         </div>
                     </div>
-                    <div class="space-y-6">
-                        <div class="bg-blue-900/30 p-6 rounded-3xl border border-blue-400/30">
-                            <h6 class="text-xs font-black uppercase tracking-widest mb-3 flex items-center gap-2">
-                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path></svg>
+                    <div class="group">
+                        <div class="bg-blue-950/20 p-8 rounded-[32px] backdrop-blur-md border border-white/5 hover:bg-blue-950/30 transition-all duration-300 h-full">
+                            <h6 class="text-[10px] font-black uppercase tracking-[0.2em] mb-4 flex items-center gap-3">
+                                <svg class="w-4 h-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path></svg>
                                 Real-Time Validation
                             </h6>
-                            <p class="text-[11px] leading-relaxed text-blue-50 font-bold italic">Sistem secara cerdas akan mengecek database saat Anda mengetik. Jika kode sudah digunakan oleh barang lain, peringatan akan muncul secara <span class="text-orange-400 font-black underline">Live</span> untuk mencegah terjadinya data ganda.</p>
+                            <p class="text-xs leading-relaxed text-blue-50 font-bold italic opacity-90">Sistem secara cerdas akan mengecek database saat Anda mengetik. Jika kode sudah digunakan oleh barang lain, peringatan akan muncul secara <span class="text-orange-400 font-black underline decoration-orange-400/50 underline-offset-4">Live</span> untuk mencegah terjadinya data ganda.</p>
                         </div>
                     </div>
                 </div>
