@@ -10,8 +10,8 @@
         errorMessage: '',
         
         // Prices with auto-formatting
-        rawBuyPrice: '{{ old('buy_price', $item->buy_price) }}',
-        rawSellPrice: '{{ old('sell_price', $item->sell_price) }}',
+        rawBuyPrice: '{{ old('buy_price', (int)$item->buy_price) }}',
+        rawSellPrice: '{{ old('sell_price', (int)$item->sell_price) }}',
 
         // Category selection
         category_id: '{{ old('category_id', $item->category_id) }}',
@@ -38,6 +38,11 @@
             this.errorMessage = msg;
             this.showError = true;
             setTimeout(() => { this.showError = false; }, 5000);
+        },
+
+        init() {
+            this.rawBuyPrice = this.formatRupiah(this.rawBuyPrice);
+            this.rawSellPrice = this.formatRupiah(this.rawSellPrice);
         },
 
         handleFile(file) {
