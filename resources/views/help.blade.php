@@ -98,7 +98,7 @@
 
     <!-- SPECIAL SECTION: KODE BARANG SKU -->
     <div class="mb-24">
-        <div class="bg-white p-10 md:p-16 rounded-[60px] border-2 border-blue-50 shadow-2xl shadow-blue-100/50 relative overflow-hidden">
+        <div class="bg-white p-10 md:p-16 rounded-[60px] shadow-2xl shadow-blue-100/50 relative overflow-hidden">
             <!-- Decorative Accent -->
             <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-[100px] -z-0"></div>
             
@@ -113,7 +113,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="group">
-                        <div class="bg-gray-50/50 p-8 rounded-[40px] border border-gray-100 hover:border-blue-200 hover:bg-white transition-all duration-300 h-full shadow-sm">
+                        <div class="bg-gray-50/50 p-8 rounded-[40px] hover:bg-white transition-all duration-300 h-full shadow-sm">
                             <h6 class="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] mb-4 flex items-center gap-3">
                                 <span class="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span>
                                 Kenapa Wajib Ada?
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                     <div class="group">
-                        <div class="bg-blue-50/30 p-8 rounded-[40px] border border-blue-100 hover:border-blue-300 hover:bg-white transition-all duration-300 h-full shadow-sm">
+                        <div class="bg-blue-50/30 p-8 rounded-[40px] hover:bg-white transition-all duration-300 h-full shadow-sm">
                             <h6 class="text-[10px] font-black text-blue-500 uppercase tracking-[0.2em] mb-4 flex items-center gap-3">
                                 <svg class="w-4 h-4 text-orange-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path></svg>
                                 Real-Time Validation
