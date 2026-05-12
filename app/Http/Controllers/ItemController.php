@@ -25,6 +25,33 @@ class ItemController extends Controller
         return view('items.create', compact('categories'));
     }
 
+    public function checkCode(Request $request)
+    {
+        $code = $request->query('code');
+        $excludeId = $request->query('exclude_id');
+
+        if (!$code) {
+            return response()->json(['exists' => false]);
+        }
+
+        $query = Item::where('item_code', $code);
+        
+        if ($excludeId) {
+            $query->where('id', '!=', $excludeId);
+        }
+
+        $item = $query->first();
+
+        if ($item) {
+            return response()->json([
+                'exists' => true,
+                'name' => $item->name
+            ]);
+        }
+
+        return response()->json(['exists' => false]);
+    }
+
     public function store(Request $request)
     {
         $request->validate([
